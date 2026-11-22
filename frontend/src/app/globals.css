@@ -1,0 +1,39 @@
+@import "tailwindcss";
+@import "leaflet/dist/leaflet.css";
+
+:root {
+  --forest-dark: #1b4332;
+  --forest-mid: #2d6a4f;
+  --forest-light: #40916c;
+  --forest-subtle: #d8f3dc;
+  --surface-cream: #f8f9fa;
+  --surface-white: #ffffff;
+  --charcoal: #1a1a1a;
+  --slate-subtle: #6c757d;
+  --border-subtle: #e5e7eb;
+}
+
+body {
+  background-color: var(--surface-cream);
+  color: var(--charcoal);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #999;
+}
