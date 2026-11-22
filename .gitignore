@@ -1,23 +1,70 @@
-# Python
+# ==============================================================================
+# FOODLOOP AI - Git Ignore
+# ==============================================================================
+
+# Database & SQLite (generated locally via python -m backend.app.seed)
+*.db
+*.db-journal
+*.sqlite
+*.sqlite3
+foodloop.db
+
+# Python & Virtual Environments
 __pycache__/
 *.py[cod]
 *$py.class
 *.so
 .pytest_cache/
+.coverage
+htmlcov/
+.mypy_cache/
+venv/
+env/
+.venv/
+ENV/
+
+# Environment Variables & Secrets (Keep .env.example only)
 .env
+.env.local
+.env.*.local
+*.env
+!.env.example
 
 # Node & Next.js
 node_modules/
+frontend/node_modules/
 .next/
+frontend/.next/
+out/
+frontend/out/
+build/
 dist/
+.turbo/
+*.tsbuildinfo
+frontend/next-env.d.ts
+
+# Package manager logs
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
 
-# OS & IDE
+# Vercel Deployment Artifacts
+.vercel/
+frontend/.vercel/
+
+# Operating System & IDE Artifacts
 .DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
 Thumbs.db
 *.swp
 *.swo
 .vscode/
+!.vscode/extensions.json
 .idea/
+*.sublime-workspace
