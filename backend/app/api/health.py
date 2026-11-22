@@ -9,6 +9,7 @@ from backend.ml.model_registry import ModelRegistry
 
 router = APIRouter(tags=["System Health & Telemetry"])
 
+@router.get("/")
 @router.get("/health")
 @router.get("/api/health")
 async def health_check(db: Session = Depends(get_db)):
