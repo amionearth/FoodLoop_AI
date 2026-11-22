@@ -141,7 +141,7 @@ export default function HomePage() {
                 <span>Test Seller Account</span>
               </div>
               <p className="text-xs font-medium text-gray-900 mt-1">Green Harvest Kitchen</p>
-              <p className="text-[11px] text-gray-500">Restaurant • Koramangala (12.9352, 77.6245)</p>
+              <p className="text-[11px] text-gray-500">Restaurant • Marine Drive, Kochi, Kerala (9.9816, 76.2799)</p>
               <div className="mt-2 text-[11px] text-gray-600 bg-white p-2 rounded border border-gray-100">
                 Has 28 days of historical sales + active batch ready for ML demand prediction & safety review.
               </div>
@@ -163,7 +163,7 @@ export default function HomePage() {
                 <span>Test Recipient #1</span>
               </div>
               <p className="text-xs font-medium text-gray-900 mt-1">Aashray Community Kitchen</p>
-              <p className="text-[11px] text-gray-500">Kitchen • Indiranagar (Capacity: 150 meals)</p>
+              <p className="text-[11px] text-gray-500">Kitchen • Kakkanad, Kochi, Kerala (Capacity: 150 meals)</p>
               <div className="mt-2 text-[11px] text-gray-600 bg-white p-2 rounded border border-gray-100">
                 Storage: Chilled/Ambient. Accepts prepared meals. Ranked top match by allocation algorithm.
               </div>
@@ -185,7 +185,7 @@ export default function HomePage() {
                 <span>Test Recipient #2</span>
               </div>
               <p className="text-xs font-medium text-gray-900 mt-1">Annapoorna Food Bank</p>
-              <p className="text-[11px] text-gray-500">Food Bank • HSR Layout (Capacity: 250 meals)</p>
+              <p className="text-[11px] text-gray-500">Food Bank • Edappally, Kochi, Kerala (Capacity: 250 meals)</p>
               <div className="mt-2 text-[11px] text-gray-600 bg-white p-2 rounded border border-gray-100">
                 Storage: Frozen/Chilled/Ambient. High bulk intake capability.
               </div>

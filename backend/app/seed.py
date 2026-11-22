@@ -30,7 +30,7 @@ def seed_test_data():
 
     print("=== Seeding FOODLOOP AI Hackathon Test Scenario ===")
 
-    # 1. Register Test Restaurant A (Seller) - Koramangala, Bengaluru
+    # 1. Register Test Restaurant A (Seller) - Marine Drive, Kochi, Kerala
     seller_user = User(
         email="seller.test@foodloop.local",
         hashed_password=get_password_hash("FoodloopTest123!"),
@@ -45,20 +45,20 @@ def seed_test_data():
         category="Restaurant",
         contact_person="Rohan Sharma",
         phone="+91 98765 43210",
-        address="100 Feet Road, 4th Block, Koramangala",
-        city="Bengaluru",
-        state="Karnataka",
+        address="Shanmugham Road, Marine Drive",
+        city="Kochi",
+        state="Kerala",
         country="India",
-        postal_code="560034",
-        latitude=12.9352,
-        longitude=77.6245,
+        postal_code="682031",
+        latitude=9.9816,
+        longitude=76.2799,
         operating_hours="10:00 - 23:00",
         food_categories="Prepared Meals, Bakery, Fresh Produce",
         is_test_account=True
     )
     db.add(seller_biz)
 
-    # 2. Register Test Recipient A: Community Kitchen - Indiranagar, Bengaluru (~5 km)
+    # 2. Register Test Recipient A: Community Kitchen - Kakkanad, Kochi, Kerala (~11 km)
     kit_user = User(
         email="kitchen.test@foodloop.local",
         hashed_password=get_password_hash("FoodloopTest123!"),
@@ -73,13 +73,13 @@ def seed_test_data():
         org_type="Community Kitchen",
         contact_person="Priya Nair",
         phone="+91 98111 22334",
-        address="12th Main Road, HAL 2nd Stage, Indiranagar",
-        city="Bengaluru",
-        state="Karnataka",
+        address="Seaport - Airport Road, Kakkanad",
+        city="Kochi",
+        state="Kerala",
         country="India",
-        postal_code="560038",
-        latitude=12.9719,
-        longitude=77.6412,
+        postal_code="682030",
+        latitude=10.0159,
+        longitude=76.3419,
         verification_status="VERIFIED",
         daily_capacity_meals=150,
         storage_capabilities="AMBIENT,CHILLED",
@@ -89,7 +89,7 @@ def seed_test_data():
     )
     db.add(kitchen_rec)
 
-    # 3. Register Test Recipient B: Food Bank - HSR Layout, Bengaluru (~4 km)
+    # 3. Register Test Recipient B: Food Bank - Edappally, Kochi, Kerala (~6 km)
     fb_user = User(
         email="foodbank.test@foodloop.local",
         hashed_password=get_password_hash("FoodloopTest123!"),
@@ -104,13 +104,13 @@ def seed_test_data():
         org_type="Food Bank",
         contact_person="Vikram Rao",
         phone="+91 98222 33445",
-        address="Sector 2, 27th Main, HSR Layout",
-        city="Bengaluru",
-        state="Karnataka",
+        address="Toll Junction, Edappally",
+        city="Kochi",
+        state="Kerala",
         country="India",
-        postal_code="560102",
-        latitude=12.9116,
-        longitude=77.6389,
+        postal_code="682024",
+        latitude=10.0236,
+        longitude=76.3117,
         verification_status="VERIFIED",
         daily_capacity_meals=250,
         storage_capabilities="AMBIENT,CHILLED,FROZEN",

@@ -36,30 +36,30 @@ export default function MapPage() {
         setStops(res.route.stops || []);
         setGeometry(res.route.geometry || null);
       } else {
-        // Fallback default demonstration stops (Test Seller + 2 Test Recipients)
+        // Fallback default demonstration stops (Test Seller + 2 Test Recipients in Kochi, Kerala)
         const demoStops = [
           {
             id: "seller-1",
             label: "Green Harvest Kitchen (Donor)",
-            address: "100 Feet Road, Koramangala",
-            lat: 12.9352,
-            lon: 77.6245,
+            address: "Marine Drive, Kochi, Kerala",
+            lat: 9.9816,
+            lon: 76.2799,
             stop_type: "PICKUP",
           },
           {
             id: "rec-1",
             label: "Aashray Community Kitchen",
-            address: "12th Main Road, Indiranagar",
-            lat: 12.9719,
-            lon: 77.6412,
+            address: "Kakkanad, Kochi, Kerala",
+            lat: 10.0159,
+            lon: 76.3419,
             stop_type: "DELIVERY",
           },
           {
             id: "rec-2",
             label: "Annapoorna Food Bank",
-            address: "Sector 2, HSR Layout",
-            lat: 12.9116,
-            lon: 77.6389,
+            address: "Edappally, Kochi, Kerala",
+            lat: 10.0236,
+            lon: 76.3117,
             stop_type: "DELIVERY",
           },
         ];
@@ -107,7 +107,7 @@ export default function MapPage() {
         <div>
           <h1 className="text-2xl font-bold text-gray-900 flex items-center space-x-2">
             <Navigation className="w-6 h-6 text-[#1b4332]" />
-            <span>GIS Map & OSRM Dynamic Road Routing</span>
+            <span>GIS Map & OSRM Dynamic Road Routing (Kochi, Kerala)</span>
           </h1>
           <p className="text-xs text-gray-500 mt-0.5">
             Real turn-by-turn geometry calculated by Open Source Routing Machine over actual OpenStreetMap road network.
