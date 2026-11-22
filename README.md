@@ -55,7 +55,27 @@ Unlike simple listing boards or chatbots, FOODLOOP AI implements the complete cl
 
 ## 3. Quickstart & Local Setup
 
-### 3.1 Backend Setup (FastAPI & ML Engine)
+### 3.0 One-Click Launch (Windows)
+Simply double-click:
+```
+run_foodloop.bat
+```
+This script will automatically:
+1. Verify Python and Node.js environments.
+2. Verify / train the ML model artifact (`HistGradientBoostingRegressor`).
+3. Seed the local database with hackathon test personas and historical records.
+4. Launch the FastAPI Python Backend on `http://localhost:8000`.
+5. Launch the Next.js Web Application on `http://localhost:3000`.
+6. Open your default browser automatically to `http://localhost:3000`.
+
+To stop both services at any time, run:
+```
+stop_foodloop.bat
+```
+
+---
+
+### 3.1 Manual Backend Setup (FastAPI & ML Engine)
 
 1. **Activate Python environment & install dependencies**:
    ```bash
