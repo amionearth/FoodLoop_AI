@@ -134,9 +134,9 @@ All 9 test suites test seller authentication, recipient role isolation, manual c
 
 | Persona | Role | Email | Password | Coordinates | Notes |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Green Harvest Kitchen** | `SELLER` | `seller.test@foodloop.local` | `FoodloopTest123!` | 12.9352, 77.6245 | Restaurant in Koramangala with 28 days of sales & active batch. |
-| **Aashray Community Kitchen** | `RECIPIENT` | `kitchen.test@foodloop.local` | `FoodloopTest123!` | 12.9719, 77.6412 | Kitchen in Indiranagar. Daily capacity: 150 meals. Chilled/Ambient. |
-| **Annapoorna Food Bank** | `RECIPIENT` | `foodbank.test@foodloop.local` | `FoodloopTest123!` | 12.9116, 77.6389 | Food Bank in HSR Layout. Daily capacity: 250 meals. Frozen/Chilled. |
+| **Green Harvest Kitchen** | `SELLER` | `seller.test@foodloop.local` | `FoodloopTest123!` | 9.9816, 76.2799 | Restaurant in Marine Drive, Kochi, Kerala with 28 days of sales & active batch. |
+| **Aashray Community Kitchen** | `RECIPIENT` | `kitchen.test@foodloop.local` | `FoodloopTest123!` | 10.0159, 76.3419 | Kitchen in Kakkanad, Kochi, Kerala. Daily capacity: 150 meals. Chilled/Ambient. |
+| **Annapoorna Food Bank** | `RECIPIENT` | `foodbank.test@foodloop.local` | `FoodloopTest123!` | 10.0236, 76.3117 | Food Bank in Edappally, Kochi, Kerala. Daily capacity: 250 meals. Frozen/Chilled. |
 
 *(1-click login buttons for all three accounts are available directly on the homepage `http://localhost:3000`)*.
 

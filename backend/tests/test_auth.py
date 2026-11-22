@@ -9,13 +9,13 @@ def test_seller_register_and_login(client):
         "category": "Bakery",
         "contact_person": "Anita Roy",
         "phone": "+91 9123456789",
-        "address": "12 Commercial Street",
-        "city": "Bengaluru",
-        "state": "Karnataka",
+        "address": "MG Road",
+        "city": "Kochi",
+        "state": "Kerala",
         "country": "India",
-        "postal_code": "560001",
-        "latitude": 12.9815,
-        "longitude": 77.6080,
+        "postal_code": "682016",
+        "latitude": 9.9698,
+        "longitude": 76.2865,
         "operating_hours": "07:00 - 21:00",
         "food_categories": "Bakery, Desserts"
     }
@@ -43,7 +43,7 @@ def test_seller_register_and_login(client):
     assert me["email"] == unique_email
     assert me["role"] == "SELLER"
     assert me["business"]["business_name"] == "Artisan Bakery"
-    assert me["business"]["latitude"] == 12.9815
+    assert me["business"]["latitude"] == 9.9698
 
 def test_recipient_register_and_isolation(client):
     unique_email = f"ngo_{uuid.uuid4().hex[:6]}@foodloop.org"
@@ -54,13 +54,13 @@ def test_recipient_register_and_isolation(client):
         "org_type": "Shelter",
         "contact_person": "Mark D'Souza",
         "phone": "+91 9988776655",
-        "address": "45 Brigade Road",
-        "city": "Bengaluru",
-        "state": "Karnataka",
+        "address": "Bazaar Road, Fort Kochi",
+        "city": "Kochi",
+        "state": "Kerala",
         "country": "India",
-        "postal_code": "560025",
-        "latitude": 12.9716,
-        "longitude": 77.6090,
+        "postal_code": "682001",
+        "latitude": 9.9656,
+        "longitude": 76.2421,
         "daily_capacity_meals": 120,
         "storage_capabilities": "AMBIENT,CHILLED",
         "accepted_categories": "Prepared Meals, Bakery",

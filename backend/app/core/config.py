@@ -21,6 +21,16 @@ class Settings(BaseModel):
     SUPABASE_URL: str = os.getenv("NEXT_PUBLIC_SUPABASE_URL", "")
     SUPABASE_KEY: str = os.getenv("NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY", "")
     
+    # Regional Configuration (Kerala, India)
+    DEFAULT_REGION: str = os.getenv("DEFAULT_REGION", "Kerala, India")
+    DEFAULT_STATE: str = os.getenv("DEFAULT_STATE", "Kerala")
+    DEFAULT_CITY: str = os.getenv("DEFAULT_CITY", "Kochi")
+    DEFAULT_LATITUDE: float = float(os.getenv("DEFAULT_LATITUDE", "9.9816"))
+    DEFAULT_LONGITUDE: float = float(os.getenv("DEFAULT_LONGITUDE", "76.2799"))
+    DEFAULT_TIMEZONE: str = os.getenv("DEFAULT_TIMEZONE", "Asia/Kolkata")
+    DEFAULT_CURRENCY: str = "INR"
+    DEFAULT_CURRENCY_SYMBOL: str = "₹"
+    
     # Routing & Mapping
     OSRM_ROUTING_URL: str = os.getenv("ROUTING_API_URL", "https://router.project-osrm.org/route/v1/driving")
     GEOCODING_PROVIDER: str = os.getenv("GEOCODING_PROVIDER", "nominatim")
