@@ -1,0 +1,53 @@
+{
+  "algorithm": "HistGradientBoostingRegressor",
+  "version": "v20261119_172328",
+  "trained_at": "2026-11-19T17:23:28.644775+00:00",
+  "dataset_source": "Mendeley Data \u2014 Restaurant Sales Data with Features (CC BY 4.0)",
+  "features": [
+    "day_of_week",
+    "is_weekend",
+    "month",
+    "day_of_month",
+    "sin_day_of_year",
+    "cos_day_of_year",
+    "is_holiday",
+    "temperature_c",
+    "precipitation_mm",
+    "unit_price",
+    "lag_1",
+    "lag_7",
+    "lag_14",
+    "rolling_mean_7",
+    "rolling_std_7",
+    "rolling_mean_14"
+  ],
+  "target": "units_sold",
+  "metrics": {
+    "mae": 3.883,
+    "rmse": 4.973,
+    "wape": 0.0903,
+    "bias": 0.001
+  },
+  "baseline_metrics": {
+    "naive_previous_day": {
+      "mae": 8.582,
+      "rmse": 11.335,
+      "wape": 0.1995,
+      "bias": -0.026
+    },
+    "weekly_seasonal_naive": {
+      "mae": 5.347,
+      "rmse": 6.759,
+      "wape": 0.1243,
+      "bias": 0.661
+    },
+    "moving_average_7day": {
+      "mae": 8.77,
+      "rmse": 10.085,
+      "wape": 0.2039,
+      "bias": 0.468
+    }
+  },
+  "train_period": "2021-01-01 to 2022-05-25",
+  "test_period": "2022-09-13 to 2022-12-31"
+}
